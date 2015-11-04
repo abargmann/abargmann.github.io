@@ -1,0 +1,41 @@
+---
+layout: default
+---
+<section>
+	<p>
+		Product and other internet things.  Currently head of product at <a href="www.noodle.com" href="_blank">Noodle</a>.
+	</p>
+	<ul style="text-align:center;">
+		<li>
+			<div class="title">
+				<a href="https://www.twitter.com/abargmann">Twitter</a>
+			</div>
+		</li>
+		<li>
+			<div class="title">
+				<a href="https://www.linkedin.com/in/abargmann">Linkedin</a>
+			</div>
+		</li>
+	</ul>
+</section>
+<section>
+<hr>	
+<section>
+<section>
+	<ul>
+
+		{% for post in site.posts %}
+
+		<li>
+			<div class="post-date">
+				<span>{{ post.date | date: "%b %d, %Y" }}</span>
+			</div>
+			<div class="title">
+				<a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+			</div>
+		</li>
+
+		{% endfor %}
+
+	</ul>
+</section>

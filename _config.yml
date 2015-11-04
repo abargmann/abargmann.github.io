@@ -1,36 +1,55 @@
-# Site wide configuration
+# Site Info
+title:              "Alex Bargmann"
+description:        "Alex Bargmann"
+# google_verify:       # Put your Google Verification here
+# google_analytics:    # Put your Google Analytics code
 
-title: Yalp
-description: "Go slower.  Read human reviews and figure out what to eat."
-logo: # 120x120 px default image used for Twitter summary card
-teaser: # 400x250 px default teaser image used in image archive grid
-locale:
-url: http://abargman.github.io
+# Author Info
+author_name:        "Alex Bargmann "
+author_email:       abargmann@gmail.com
+author_gravatar:    507853e5a22dee2cdca42fe7cff7d41c # Gravatar md5 hash
+twitter_username:   abargmann
 
-# Jekyll configuration
+# Site Settings
+# baseurl:            "" # Base URL must end WITHOUT a slash, default: ""
+# permalink:          /notes/:title # Post permalink
+timezone:           America/New_York # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
-sass:
-    sass_dir: _sass
-    style: compressed
-permalink: /:categories/:title/
+# Site Build
+highlighter:        pygments
+#markdown:           redcarpet
+#redcarpet:
+#    extensions:     ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data", "highlight", "footnotes"]
+markdown:           kramdown
 kramdown:
-  toc_levels: 1..2
-highlighter: pygments
+    input:          GFM
+sass:
+    style:          :compressed
+
+# Other Params
+include:            [ "robots.txt" ]
+exclude:            [ "LICENSE", "README.md", "CNAME", "vendor", "Gemfile" ]
 gems:
   - jekyll-sitemap
 
+compress_html:
+    clippings:      all
+    ingore:
+        envs:       [ "test" ]
 
-# Site owner
-owner: 
-  name: Alex Bargmann
-  email: abargmann@gmail.com
-  twitter: \@abargmann
-  google:
-    ad-client: 
-    ad-slot: 
-  bio: 
-  avatar: bio-photo.jpg # 160x160 px image for author byline
-  disqus-shortname:
-
-
-exclude: ["lib", "config.rb", ".sass-cache", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "*.sublime-project", "*.sublime-workspace", "Gemfile", "Gemfile.lock", "README.md", "LICENSE", "node_modules", "Gruntfile.js", "package.json"]
+defaults:
+  -
+    scope:
+      path:         ""
+    values:
+      layout:       "null"
+  -
+    scope:
+      type:         "pages"
+    values:
+      layout:       "page"
+  -
+    scope:
+      type:         "posts"
+    values:
+      layout:       "post"
