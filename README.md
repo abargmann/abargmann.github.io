@@ -1,9 +1,10 @@
-# The Plain v1
+# README 
 
-A minimalist Jekyll theme, made with passion for simplicity by [Heiswayi Nrird](http://heiswayi.github.io). More details about it [**here**](http://heiswayi.github.io/the-plain.html); **theme description**, **screenshot**, **install instructions** and **demo link**.
+This is my, Alex Bargmann's personal website.  It's powered by [Jekyll](https://jekyllrb.com/).  I use the [Plain v1](http://heiswayi.github.io/the-plain.html) theme. 
+
 
 ## Credits
 
-This theme is based on Leonard Lamprecht's [Jekyll theme][1] and released under [MIT license](LICENSE).
+The theme is from [Heiswayi Nrird](http://heiswayi.github.io). It's based on Leonard Lamprecht's [Jekyll theme][1] which was released under [MIT license](LICENSE).
 
 [1]: https://github.com/leo/leo.github.io
