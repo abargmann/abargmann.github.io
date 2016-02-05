@@ -8,14 +8,31 @@ title: Changelog
 
      <tr>
         <td style="width:25%">
+          February 5, 2016
+        </td>
+        <td style="width:65%">
+          <p>
+            Back to programming and building after about a week on other things.  Wasn't as jazzed on the notes thing so dove into another project that was on my mind: service that tells you what produce is in season near you.
+          </p>
+          <p>
+            Seasonality isn't always correlated with availability, particularly for local things, but nonetheless this lets me play more with SMS - going to use that for both adding new produce and requesting seasonal produce based on a location.
+          </p>
+          <p>
+          	Setup the django app today with test data.  Is able to return what produce is in season based on todays date to a web view.  Will work on the Twilio view tomorrow.  Then add more features around location and probably add some real information.
+          </p>
+        </td>
+      </tr>
+
+     <tr>
+        <td style="width:25%">
           January 29, 2016
         </td>
         <td style="width:65%">
           <p>
-            Receiving SMS messages via Twilio.  In the middle of writing a method that would open a google form and submit the parsed message into the spreadsheet.  Having trouble figuring this out while learning django.  
-          </p>  
+            Receiving SMS messages via Twilio.  In the middle of writing a method that would open a google form and submit the parsed message into the spreadsheet.  Having trouble figuring this out while learning django.
+          </p>
           <p>
-            Learned how to make my localhost accesible to web to test Twilio stuff locally - hugely helpful for debugging.  Using ngrok.  
+            Learned how to make my localhost accesible to web to test Twilio stuff locally - hugely helpful for debugging.  Using ngrok.
           </p>
         </td>
       </tr>
@@ -26,15 +43,15 @@ title: Changelog
         </td>
         <td style="width:65%">
           <p>
-            Set up initial Django app with requisite django-twilio package.  Made mistake of trying to upgrade Python before and had to fix problem with multiple version of Python installed, making sure django was correct in path, and virtualenv was working.  
+            Set up initial Django app with requisite django-twilio package.  Made mistake of trying to upgrade Python before and had to fix problem with multiple version of Python installed, making sure django was correct in path, and virtualenv was working.
           </p>
           <p>
             Setup Twilio number and built Google spreadsheet as a temporary data store for notes.
-          </p>  
+          </p>
         </td>
       </tr>
 
-    </table> 
+    </table>
 </body>
 
 
