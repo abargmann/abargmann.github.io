@@ -10,3 +10,4 @@ More Info:
 * [LinkedIn](https://www.linkedin.com/in/abargmann)
 * [Github](https://www.github.com/abargmann)
 * [Email](mailto:abargmann@gmail.com)
+* [Resume](https://www.dropbox.com/s/mwu7eji4h5grw0m/bargmannResume.pdf?dl=0)
